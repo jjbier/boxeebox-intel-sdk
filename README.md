@@ -14,6 +14,11 @@
 	export CXX=/usr/local/bin/g++-4.9
 	export CPP=/usr/local/bin/cpp-4.9
 	export LD=/usr/local/bin/gcc-4.9
+	
+# Prerequisites on Ubuntu 12.04 LTS
+
+	sudo apt-get install golang
+	
 
 # Building
 
