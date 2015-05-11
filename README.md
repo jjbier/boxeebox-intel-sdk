@@ -1,26 +1,17 @@
 # Preparations
 
-	git clone https://github.com/quarnster/boxeebox-intel-sdk.git
+	git clone https://github.com/quasar1/boxeebox-intel-sdk.git -b ubuntu-12.04-lts  (this branch)
 	cd boxeebox-intel-sdk
 	mkdir build
 	cd build
 
-# Prerequisites on darwin
-
-	brew install doxygen gcc49 gnu-sed
-	ln -s /usr/local/bin/gsed sed
-	export PATH=$PWD:$PATH
-	export CC=/usr/local/bin/gcc-4.9
-	export CXX=/usr/local/bin/g++-4.9
-	export CPP=/usr/local/bin/cpp-4.9
-	export LD=/usr/local/bin/gcc-4.9
-	
 # Prerequisites on Ubuntu 12.04 LTS
 
 	sudo apt-get install golang
 	update to cmake 3.2.2:
 	
 	wget http://www.cmake.org/files/v3.2/cmake-3.2.2.tar.gz
+	tar -zxvf cmake-3.2.2.tar.gz
 	cd cmake-3.2.2
 	mkdir build
 	cd build
