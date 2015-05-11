@@ -1,8 +1,8 @@
 # Preparations
 
+	git clone https://github.com/quarnster/boxeebox-intel-sdk.git
 	cd boxeebox-intel-sdk
 	mkdir build
-	git clone https://github.com/quarnster/boxeebox-intel-sdk.git
 	cd build
 
 # Prerequisites on darwin
@@ -18,7 +18,16 @@
 # Prerequisites on Ubuntu 12.04 LTS
 
 	sudo apt-get install golang
+	update to cmake 3.2.2:
 	
+	wget http://www.cmake.org/files/v3.2/cmake-3.2.2.tar.gz
+	cd cmake-3.2.2
+	mkdir build
+	cd build
+	cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+	make
+	sudo make install
+	sudo ldconfig	
 
 # Building
 
